@@ -9,10 +9,21 @@
     <title>Practice Journal</title>
   </head>
   <body>
-    <h1>Welcome, Adam!</h1>
+    <header>
+      <img
+        class="logo"
+        src="{% static 'images/perfect-practice-logo.png' %}"
+        alt="Perfect Practice logo"
+      />
+    </header>
+    <br />
     <hr />
+    <h1>Welcome, Adam!</h1>
     <section id="intro-section">
-      <p>It has been 1 day since your last practice session</p>
+      <p>
+        It has been <span class="text-highlight">1 day</span> since your last
+        practice session
+      </p>
       <p>You have practiced for 3 hours and 45 minutes this week</p>
     </section>
     <section id="buttons-section">
