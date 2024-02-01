@@ -69,6 +69,15 @@ hr {
   max-width: 80%;
 }
 
+li {
+  margin: 1rem;
+  font-size: x-large;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
 .text-highlight {
   color: var(--highlight);
 }
