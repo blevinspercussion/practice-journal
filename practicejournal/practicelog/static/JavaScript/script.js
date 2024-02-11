@@ -4,10 +4,10 @@ let navMenu = document.getElementById("nav-menu");
 let menuButton = document.getElementById("hamburger-div");
 
 menuButton.addEventListener("click", () => {
-  if (navMenu.style.visibility == "hidden") {
-    navMenu.style.visibility = "visible";
-  } else {
+  if (navMenu.style.visibility == "visible") {
     navMenu.style.visibility = "hidden";
+  } else {
+    navMenu.style.visibility = "visible";
   }
 });
 
