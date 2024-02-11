@@ -5,6 +5,15 @@
   --highlight: #cd3d3d;
 }
 
+a {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+a .hover {
+  color: var(--highlight);
+}
+
 body {
   margin: none;
   background-color: var(--main-bg-color);
@@ -13,6 +22,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: "Open Sans", sans-serif;
 }
 
 button {
