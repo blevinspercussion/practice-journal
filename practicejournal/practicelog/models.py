@@ -4,7 +4,8 @@ from django.db import models
 class User(models.Model):
     firstName = models.CharField(max_length=50)
     lastName = models.CharField(max_length=50)
-    goals = models.ManyToManyField()
+    # goals =
+    # practiceGoals =
     minutesPracticed = models.IntegerField()
 
     def __str__(self):
@@ -27,6 +28,7 @@ class Goal(models.Model):
     description = models.TextField(max_length=250)
     dateAdded = models.DateTimeField(auto_now_add=True)
     dateCompleted = models.DateTimeField(auto_now=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
@@ -37,6 +39,7 @@ class PracticeGoal(models.Model):
     description = models.TextField(max_length=250)
     dateAdded = models.DateTimeField(auto_now_add=True)
     dateModified = models.DateTimeField(auto_now=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
