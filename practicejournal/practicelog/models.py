@@ -7,11 +7,17 @@ class User(models.Model):
     # goals = models.ManyToManyField()
     minutesPracticed = models.IntegerField()
 
+    def __str__(self):
+        return self.firstName
+
 
 class Exercise(models.Model):
     title = models.CharField(max_length=50)
     description = models.TextField(max_length=250)
     comfortableTempo = models.IntegerField()
+
+    def __str__(self):
+        return self.title
 
 
 class Goal(models.Model):
@@ -22,9 +28,15 @@ class Goal(models.Model):
     dateAdded = models.DateTimeField(auto_now_add=True)
     dateCompleted = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.title
+
 
 class PracticeGoal(models.Model):
     title = models.CharField(max_length=50)
     description = models.TextField(max_length=250)
     dateAdded = models.DateTimeField(auto_now_add=True)
     dateModified = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.title
