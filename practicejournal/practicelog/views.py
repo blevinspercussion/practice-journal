@@ -7,3 +7,11 @@ def homeScreen(request):
 
 def practiceScreen(request):
     return render(request, "practice.html")
+
+
+def statsScreen(request):
+    return render(request, "stats.html")
+
+
+def aboutScreen(request):
+    return render(request, "about.html")
