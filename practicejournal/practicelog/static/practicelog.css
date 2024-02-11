@@ -33,14 +33,11 @@ button {
   align-items: center;
 }
 
-.hamburger-div {
+#hamburger-div {
   width: 2rem;
   position: absolute;
   left: 5%;
   /* top: 10%; */
-}
-
-.hamburger-div hr {
 }
 
 header {
@@ -82,6 +79,7 @@ nav {
   border: 1px solid var(--highlight);
   min-height: 30vh;
   width: 100vw;
+  visibility: hidden;
 }
 
 nav ul {

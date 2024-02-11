@@ -16,15 +16,15 @@
         src="{% static 'images/perfect-practice-logo.png' %}"
         alt="Perfect Practice logo"
       />
-      <nav>
+      <nav id="nav-menu">
         <ul>
-          <li>Home</li>
-          <li>Practice</li>
-          <li>Stats</li>
-          <li>About</li>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'practice' %}">Practice</a></li>
+          <li><a>Stats</a></li>
+          <li><a>About</a></li>
         </ul>
       </nav>
-      <div class="hamburger-div">
+      <div id="hamburger-div">
         <hr />
         <hr />
         <hr />
