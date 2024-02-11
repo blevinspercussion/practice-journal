@@ -16,6 +16,7 @@ class Exercise(models.Model):
     title = models.CharField(max_length=50)
     description = models.TextField(max_length=250)
     comfortableTempo = models.IntegerField()
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
